@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const handlebars = require("express-handlebars");
 
+app.use(express.static(path.join(__dirname, "public")));
+
 //template engine
 app.engine(
   "hbs",
